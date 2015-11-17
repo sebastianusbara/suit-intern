@@ -137,7 +137,7 @@
 
 .breadcumb {
 	text-align: left;
-	padding:20px;
+	padding: 20px;
 	background: #eee;
 }
 
@@ -148,19 +148,16 @@
 	font-size: 18px;
 }
 
-.bc-active {
-	padding: 15px;
+.breadcumb-list:after {
+	content: ' > ';
 }
 
-.bc-first {
+.bc-active:after {
+	content: '';
 }
 
 .breadcumb-item {
 	text-decoration: none;
-}
-
-.breadcumb-item:after {
-	content: ' > ';
 }
 
 .breadcumb-box .breadcumb-item {
@@ -168,17 +165,14 @@
 	display: inline-block;
 	font-size: 18px;
 	background: #eee;
-	padding: 15px 30px;
+	padding: 15px 20px;
 	margin-left: -5px;
 }
 
 .breadcumb-box .breadcumb-item:after {
-	content: '';
-}
-
-.arrow {
-	float: right;
 	position: absolute;
+	content: '';
+	float: right;
 	left: 100%;
 	width: 0;
 	height: 0;
@@ -186,4 +180,12 @@
 	border-width: 10px;
 	border-color: transparent transparent transparent red;
 	z-index: 1;
+}
+
+.breadcumb-box .breadcumb-list:after {
+	content: '';
+}
+
+.breadcumb-box .bc-active{
+	margin-left: 15px;
 }
