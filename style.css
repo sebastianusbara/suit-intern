@@ -1,11 +1,10 @@
-body{
-	margin: 0;
-}
-
 .header {
 	text-align: center;
 	background: whitesmoke;
 	padding: 10px;
+	position: relative;
+	top: 0;
+	bottom : 0;
 }
 .hor-nav {
 	top: 0;
@@ -13,6 +12,7 @@ body{
 	display: block;
 	width: 100%;
 	background: black;
+	text-align: center;
 }
 .hor-nav ul{
 	padding: 0;
@@ -39,6 +39,11 @@ body{
 	text-decoration: none;
 	color: white;
 	padding: 30px;
+	text-align: center;
+}
+
+.hor-nav .menu-list a:hover{ 
+	background: red;
 }
 
 .submenu {
@@ -46,31 +51,28 @@ body{
 	position: absolute;
 	display: none;
 	background: maroon;
-	width: 150px;
+	width: 100%;
+	text-align: center;
 	z-index: 1;
 }
 
-.submenu .submenu {
-	top: 0;
-}
-
 .submenu-list{
-	width: 150px;
 	position: relative;
 }
 
 .submenu-list a{
-	padding: 20px;
 	display: inline-block;
-	width: 110px;
+	width: inherit;
 }
 
 .hor-nav .submenu-list > a:hover{
 	color: maroon;
-	background: white;
+	background: pink;
 }
 
 .submenu .submenu {
+	position: absolute;
+	top: 0;
 	left: 100%;
 	width: 100%;
 	background: red;
@@ -131,4 +133,57 @@ body{
 	text-decoration: none;
 	color: white;
 	padding: 20px;
+}
+
+.breadcumb {
+	text-align: left;
+	padding:20px;
+	background: #eee;
+}
+
+.breadcumb-list {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	font-size: 18px;
+}
+
+.bc-active {
+	padding: 15px;
+}
+
+.bc-first {
+}
+
+.breadcumb-item {
+	text-decoration: none;
+}
+
+.breadcumb-item:after {
+	content: ' > ';
+}
+
+.breadcumb-box .breadcumb-item {
+	list-style: none;
+	display: inline-block;
+	font-size: 18px;
+	background: #eee;
+	padding: 15px 30px;
+	margin-left: -5px;
+}
+
+.breadcumb-box .breadcumb-item:after {
+	content: '';
+}
+
+.arrow {
+	float: right;
+	position: absolute;
+	left: 100%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent transparent red;
+	z-index: 1;
 }

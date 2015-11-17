@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header"><h1>Belajar Breadcumb Yolo!</h1></header>
+  <nav class="hor-nav">
+    <ul class="menu">
+      <li class="menu-list"><a href="#">HOME</a></li>
+      <li class="menu-list"><a href="#">ABOUT</a>
+      </li>
+      <li class="menu-list"><a href="#">PRODUCT</a>
+        <ul class="submenu">
+          <li class="submenu-list"><a href="#">Product 1</a>
+            <ul class="submenu">
+              <li class="submenu-list"><a href="#">Product 1.1</a></li>
+              <li class="submenu-list"><a href="#">Product 1.2</a></li>
+              <li class="submenu-list"><a href="#">Product 1.3</a></li>
+            </ul>
+          </li>
+          <li class="submenu-list"><a href="#">Product 2</a></li>
+          <li class="submenu-list"><a href="#">Product 3</a></li>
+        </ul>
+      </li>
+      <li class="menu-list"><a href="#">GALLERY</a>
+        <ul class="submenu">
+          <li class="submenu-list"><a href="#">Gallery 1</a></li>
+          <li class="submenu-list"><a href="#">Gallery 2</a>
+            <ul class="submenu">
+              <li class="submenu-list"><a href="#">Gallery 2.1</a></li>
+              <li class="submenu-list"><a href="#">Gallery 2.2</a></li>
+              <li class="submenu-list"><a href="#">Gallery 2.3</a></li>
+            </ul>
+          </li>
+          <li class="submenu-list"><a href="#">Gallery 3</a></li>
+        </ul>
+      </li>
+      <li class="menu-list"><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div>
+    <ul class="breadcumb">
+      <li class="breadcumb-list"><a href="#" class="breadcumb-item">Home</a></li>
+      <li class="breadcumb-list"><a href="#" class="breadcumb-item">Product</a></li>
+      <li class="breadcumb-list">Gun</li>
+    </ul>
+  </div>
+  <div>
+    <ul class="breadcumb-box">
+      <li class="breadcumb-list bc-first"><a href="#" class="breadcumb-item">Home<span class="arrow"></span></a></li>
+      <li class="breadcumb-list"><a href="#" class="breadcumb-item">Product<span class="arrow"></span></a></li>
+      <li class="breadcumb-list bc-active">Gun</li>
+    </ul>
+  </div>
+</body>
+</html>
