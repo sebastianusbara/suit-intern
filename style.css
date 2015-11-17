@@ -1,0 +1,107 @@
+.top-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 60px;
+	background: black;
+}
+.top-nav ul {
+	padding: 0;
+	position: absolute;
+}
+
+.top-nav li {
+	list-style: none;
+	color:white;
+}
+
+.menu {
+	background: black;
+	color: white;
+}
+
+.menu-list { 
+	display: inline-block;
+	padding: 10px;
+	width:200px;
+}
+
+.menu-list a{ 
+	text-decoration: none;
+	color:white;
+}
+
+.submenu {
+	display: none;
+	background: maroon;
+	width: 150px;
+}
+
+.submenu-list {
+	padding-top: 20px;
+}
+
+.submenu-list:hover {
+	background: white;
+	width: 150px;
+}
+
+.submenu-list:hover > a{
+	color: maroon;
+}
+
+.submenu .submenu {
+	left: 100%;
+	width: 200px;
+	background: red;
+	margin-top: -20px;
+}
+
+.submenu-list .submenu-list {
+	padding-top: 20px;
+}
+
+.menu-list:hover > .submenu {
+	display: inline-block;
+}
+
+.submenu-list:hover > .submenu{
+	display: inline-block;
+}
+
+.ver-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 150px;
+	height: 100%;
+	background: black;
+}
+
+.ver-nav li {
+	list-style: none;
+	color:white;
+}
+
+.ver-nav .menu-list{
+	display: inline-block;
+}
+
+.ver-nav .menu-list:hover > .submenu {
+	display: inline-block;
+	position: absolute;
+	left: 100%;
+	width: 150px;
+	padding-left: 0px;
+}
+
+.ver-nav .submenu-list:hover > .submenu {
+	display: inline-block;
+	position: absolute;
+	left: 100%;
+	width: 150px;
+	padding-left: 0px;
+}
