@@ -1,6 +1,6 @@
 # suit-intern
 
-Front End Dev Tools :
+Front End Dev Tools : <br>
 Yeoman, SASS, Gulp, Sublime + Plugin (Package Control, Emmett), cmder, git, Suit Baze, NodeJS+NPM, Bower
 
 <br>
