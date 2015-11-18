@@ -1,36 +1,14 @@
 .box-list {
 	background: $flatblue;
-	float: left;
-	width: 240px;
-	height: 370px;
-	margin: 10px 20px;
+	width: 100%;
+	height: auto;
 	color: white;
-	margin-bottom: 30px;
-		
-	&:after{
-		display: block;
-		content: '';
-		width: 0px;
-		border: $flatblue solid 20px;
-		border-color: $flatblue transparent transparent transparent;
-		margin: 0 auto;
-		margin-top: 15px;
-	}
-	
-	@media #{$small-med} {
-    	width: 200px;
-		height: 390px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
 
-    	&:after{
-		display: none;
-		}
-
-    }
-
-	@media #{$medium} {
-    	width: 275px;
-		height: 400px;
-    }
+.box-list img{
+	width: 100%;
 }
 
 .box-title {
@@ -39,4 +17,17 @@
 
 .box-desc {
 	margin: 0 10px;
+}
+
+.box-arrow:after {
+	display: inline-block;
+	content: '';
+	width: 0;
+	border: red solid 30px;
+	border-color: $flatblue transparent transparent transparent;
+	
+	@media #{$medium}
+	{
+		display: none;
+	}
 }

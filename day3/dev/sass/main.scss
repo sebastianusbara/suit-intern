@@ -61,21 +61,34 @@ a {
     color: white;
 }
 
-.wrapper{
-    margin: 0 auto;
+.brgrid {
     width: 100%;
-    max-width: 270px;
-    
-    @media #{$small-med}{
-        max-width: 480px;
-    }
-    @media #{$medium} {
-        max-width: 640px;
-    }
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -20px;
+}
 
-    @media #{$large} {
-        max-width: 945px;
-    }
+.brgrid-c {
+    float: left;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+
+        @media #{$small} {
+            width: 100%;
+        }
+
+        @media #{$medium} {
+            width: 50%;
+        }
+
+        @media #{$large} {
+            width: 33.33333%;
+        }
+}
+
+.no-list {
+    list-style: none;
 }
 // 3 Header
 // ------------------------------------------------------------------------ //
