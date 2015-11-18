@@ -1139,7 +1139,7 @@ input[type="number"] {
 
 @media screen and (min-width: 48em) {
   .box-list {
-    width: 280px;
+    width: 275px;
     height: 400px;
   }
 }
@@ -1208,6 +1208,6 @@ a:hover, a:focus {
 
 @media screen and (min-width: 60em) {
   .wrapper {
-    max-width: 960px;
+    max-width: 945px;
   }
 }
