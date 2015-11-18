@@ -169,10 +169,10 @@
 	margin-left: -5px;
 }
 
-.breadcumb-box .breadcumb-item:after {
+.breadcumb-box .breadcumb-list:after {
 	position: absolute;
 	content: '';
-	float: right;
+	top: 30%;
 	left: 100%;
 	width: 0;
 	height: 0;
@@ -186,6 +186,10 @@
 	content: '';
 }
 
-.breadcumb-box .bc-active{
-	margin-left: 15px;
+.breadcumb-box .breadcumb-list:last-child {
+	margin-left:15px;
+}
+
+.breadcumb-box .breadcumb-list:last-child:after {
+	display:none;
 }
