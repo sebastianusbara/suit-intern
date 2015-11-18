@@ -1112,7 +1112,6 @@ input[type="number"] {
   width: 100%;
   height: auto;
   color: white;
-  padding-bottom: 20px;
   margin: 0 auto;
 }
 
@@ -1125,7 +1124,7 @@ input[type="number"] {
 }
 
 .box-desc {
-  margin: 0 10px;
+  padding: 10px;
 }
 
 .box-arrow:after {
@@ -1165,10 +1164,9 @@ a:hover, a:focus {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .main-title {
@@ -1179,16 +1177,14 @@ a:hover, a:focus {
 }
 
 .brgrid {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
   margin-left: -20px;
 }
 
 .brgrid-c {
   float: left;
   width: 100%;
-  padding: 10px 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -1208,8 +1204,4 @@ a:hover, a:focus {
   .brgrid-c {
     width: 33.33333%;
   }
-}
-
-.no-list {
-  list-style: none;
 }
