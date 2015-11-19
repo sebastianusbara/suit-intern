@@ -111,6 +111,7 @@ a {
 .radio-blue {
     height: 15px;
     width: 15px;
+    color: blue;
 }
 
 .button-margin {
@@ -137,7 +138,7 @@ a {
         position: relative;
         text-align: left;
         }
-    @media #{$medium}{
+    @media #{$medium} {
         &:after {
         content: ' :';
         float: right;
@@ -147,13 +148,57 @@ a {
     }
 }
 
-.news .form-label.opt{
+.news .form-label.opt {
     display: inline-block;
     width: auto;
     margin-top: $space/3;
         &:after {
         content: '';
     }
+}
+
+.opt {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.opt:before {
+    content: "";
+    display: inline-block;
+ 
+    width: 25px;
+    height: 25px;
+ 
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: white;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    border-radius: 20px;
+    border: 1px solid $black60;
+}
+
+.radio .opt:before {
+    border-radius: 8px;
+}
+
+input[type=radio]:checked + .opt:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+    padding: 3px 0;
+    background-color: $flatblue;
 }
 // 3 Header
 // ------------------------------------------------------------------------ //

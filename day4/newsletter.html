@@ -91,12 +91,12 @@
                                 <label class="form-label label--left">Gender</label>
                             </div>
                             <div class="bzg_c" data-col="s12 m2">
-                               <input class="radio-blue" type="radio" name="male"  value="male" checked /> 
-                               <label class="form-label label--left opt">Male</label>
+                               <input class="radio-blue" type="radio" name="gender"  value="male" checked id="male" onclick="male()"/> 
+                               <label class="form-label label--left opt" for="male">Male</label>
                             </div>
                             <div class="bzg_c" data-col="s12 m3">
-                               <input class="radio-blue" type="radio" name="female"  value="female" />
-                               <label class="form-label label--left opt">Female</label> 
+                               <input class="radio-blue" type="radio" name="gender" value="female" id="female" onclick="female()" />
+                               <label class="form-label label--left opt" for="female">Female</label> 
                             </div>
                         </div>
                     </div>
@@ -110,8 +110,6 @@
             </form>
         </div>
     </main>  
-    
     <script>window.myPrefix = '';</script>
-    <script src="assets/js/main.min.js"></script>
 </body>
 </html>
