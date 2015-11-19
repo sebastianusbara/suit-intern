@@ -41,6 +41,16 @@ input[type="number"] {
 .form-label {
     display: block;
     margin-top: $space/3;
+    &:after {
+        content: ' :';
+        float: none;
+    }
+    @media #{$medium}{
+        &:after {
+            content: ' :';
+            float: right;
+        }
+    }
 }
 
 .label--bold {

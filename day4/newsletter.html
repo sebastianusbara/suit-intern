@@ -20,96 +20,103 @@
 <body>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <main class="news">
-        <div class="container">
-            <form class="label--bold">
-                <div class="bzg">
-                    <div class="bzg_c" data-col="s12">
-                        <h1>Sign up to our newsletter</h1>
-                    </div>
-                    <section class="user-info">
-                        <h3>REQUIRED INFO</h3>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row">
-                            <div class="bzg_c" data-col="s12 m4">
-                                <label class="form-label label--left">Full Name</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m8">
-                                <input class="form-input form-input--block form--big" type="text" name="fullname" placeholder="e.g. John Hancock">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row row--margin">
-                            <div class="bzg_c" data-col="s12 m4">
-                                <label class="form-label label--left">E-mail</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m8">
-                                <input class="form-input form-input--block form--big" type="e-mail" name="email" placeholder="e.g. John@domain">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row row--margin">
-                            <div class="bzg_c" data-col="s12 m4">
-                                <label class="form-label label--left">Password</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m8">
-                                <input class="form-input form-input--block form--big" type="password" name="password">
-                            </div>
-                        </div>
-                    </div>
-                    </section>
+        <![endif]-->
+        <main class="news">
+            <div class="container">
 
-                    <section class="add-info">
-                        <h3>ADDITIONAL INFO</h3>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row row--margin">
-                            <div class="bzg_c" data-col="s12 m4">
-                                <label class="form-label label--left">Hobby</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m8">
-                                <input class="form-input form-input--block form--big" type="text" name="hobby">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row row--margin">
-                            <div class="bzg_c " data-col="s12 m4">
-                                <label class="form-label label--left">Adress</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m8">
-                                <textarea class="form-input form-input--block textarea-med" type="text" name="Address">
-                                </textarea>
+                <h1 class="text-center">Hello World!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum alias explicabo at cupiditate nihil debitis expedita totam suscipit, consequuntur voluptatem ut pariatur quos hic quae vel temporibus voluptates, doloribus ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum alias explicabo at cupiditate nihil debitis expedita totam suscipit, consequuntur voluptatem ut pariatur quos hic quae vel temporibus voluptates, doloribus ipsa.
+                </p>
+
+                <form class="label--bold">
+                    <h1>Sign up to our newsletter</h1>
+                    <fieldset class="user-info">
+                        <legend>REQUIRED INFO</legend>
+                        <div class="form__row">
+                            <div class="bzg">
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="fullname" class="form-label">Full name</label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m8">
+                                    <input id="fullname" class="form-input form-input--block" type="text" name="fullname" placeholder="e.g. John Hancock">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row row--margin">
-                            <div class="bzg_c" data-col="s12 m4">
-                                <label class="form-label label--left">Gender</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m2">
-                               <input class="radio-blue" type="radio" name="gender"  value="male" checked id="male" onclick="male()"/> 
-                               <label class="form-label label--left opt" for="male">Male</label>
-                            </div>
-                            <div class="bzg_c" data-col="s12 m3">
-                               <input class="radio-blue" type="radio" name="gender" value="female" id="female" onclick="female()" />
-                               <label class="form-label label--left opt" for="female">Female</label> 
+                        <div class="form__row">
+                            <div class="bzg">
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="email" class="form-label">E-mail</label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m8">
+                                    <input id="email" class="form-input form-input--block" type="text" name="email" placeholder="e.g. John@domain">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bzg_c add-padding" data-col="s12">
-                        <div class="form__row button-margin">
-                            <input class="btn btn--blue btn--round" type="submit" name="Register" value="Submit">
+                        <div class="form__row">
+                            <div class="bzg">
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="password" class="form-label">Password</label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m8">
+                                    <input id="password" class="form-input form-input--block" type="password" name="password">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </section>
+                    </fieldset>
+
+                    <fieldset class="add-info">
+                        <legend>ADDITIONAL INFO</legend>
+                        <div class="form__row">
+                            <div class="bzg">
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="hobby" class="form-label">Hobby</label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m8">
+                                    <input id="hobby" class="form-input form-input--block" type="text" name="hobby">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="bzg">
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="address" class="form-label">Address</label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m8">
+                                    <textarea id="address" class="form-input form-input--block" type="text" name="address"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="bzg">
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="male" class="form-label">Gender</label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m3">
+                                    <label for="male">
+                                        <input type="radio" id="male" name="gender" checked>
+                                        <span>Male</span>
+                                    </label>
+                                </div>
+                                <div class="bzg_c" data-col="s12 m4">
+                                    <label for="female">
+                                        <input type="radio" id="female" name="gender">
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <input type="submit" class="btn btn--blue btn--round button-margin" value="Submit">
+                        </div>
+                    </fieldset>
+
                 </div>
             </form>
         </div>
     </main>  
+
     <script>window.myPrefix = '';</script>
+    <script src="assets/js/main.min.js"></script>
 </body>
 </html>

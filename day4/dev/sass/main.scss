@@ -94,7 +94,7 @@ a {
 }
 
 .user-info {
-    margin-bottom: 220px;
+    margin-bottom: 20px;
 }
 
 .btn--bold {
@@ -103,9 +103,6 @@ a {
 
 .news {
     padding: 20px 40px;
-}
-.news div {
-    padding-left: 0;
 }
 
 .radio-blue {
@@ -116,7 +113,7 @@ a {
 
 .button-margin {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 5px;
 
     
     @media #{$medium} {
@@ -124,81 +121,12 @@ a {
         }
     }
 
-.add-padding {
-    margin-bottom: 10px;
+#address {
+    height: 120px;
 }
 
-.news .form-label {
-    display: block;
-    width: 90%;
-    margin-top: $space/3;
-        &:after {
-        content: ' :';
-        float: none;
-        position: relative;
-        text-align: left;
-        }
-    @media #{$medium} {
-        &:after {
-        content: ' :';
-        float: right;
-        position: relative;
-        text-align: right;
-        }
-    }
-}
-
-.news .form-label.opt {
-    display: inline-block;
-    width: auto;
-    margin-top: $space/3;
-        &:after {
-        content: '';
-    }
-}
-
-.opt {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 35px;
-    margin-right: 15px;
-    font-size: 13px;
-}
-
-input[type=radio] {
-    display: none;
-}
-
-.opt:before {
-    content: "";
-    display: inline-block;
- 
-    width: 25px;
-    height: 25px;
- 
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    background-color: white;
-    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-    border-radius: 20px;
-    border: 1px solid $black60;
-}
-
-.radio .opt:before {
-    border-radius: 8px;
-}
-
-input[type=radio]:checked + .opt:before {
-    content: "\2022";
-    color: #f3f3f3;
-    font-size: 30px;
-    text-align: center;
-    line-height: 18px;
-    padding: 3px 0;
-    background-color: $flatblue;
+#male,#female {
+    margin-top: 15px;
 }
 // 3 Header
 // ------------------------------------------------------------------------ //
