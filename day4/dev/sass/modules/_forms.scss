@@ -53,6 +53,15 @@ input[type="number"] {
     }
 }
 
+.signup .form-label {
+    display: block;
+    margin-top: $space/3;
+    &:after {
+        content: '';
+        float: none;
+    }
+}
+
 .label--bold {
     font-weight: bold;
 }

@@ -1013,6 +1013,16 @@ input[type="number"] {
   }
 }
 
+.signup .form-label {
+  display: block;
+  margin-top: 0.53333em;
+}
+
+.signup .form-label:after {
+  content: '';
+  float: none;
+}
+
 .label--bold {
   font-weight: bold;
 }
@@ -1181,10 +1191,6 @@ a:hover, a:focus {
   margin: 20px;
 }
 
-.double-line {
-  display: inline;
-}
-
 .double-line:before, .double-line:after {
   display: inline-block;
   content: '';
@@ -1196,13 +1202,23 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 48em) {
-  .double-line:before, .double-line:after {
-    width: 25%;
+  .double-line:before {
+    margin-right: 25px;
+    width: 30%;
+  }
+  .double-line:after {
+    margin-left: 25px;
+    width: 30%;
   }
 }
 
 @media screen and (min-width: 60em) {
-  .double-line:before, .double-line:after {
+  .double-line:before {
+    margin-right: 25px;
+    width: 35%;
+  }
+  .double-line:after {
+    margin-left: 25px;
     width: 35%;
   }
 }

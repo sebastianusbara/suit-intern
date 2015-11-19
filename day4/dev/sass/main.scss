@@ -58,7 +58,6 @@ a {
 }
 
 .double-line {
-    display: inline;
     &:before, &:after {
         display: inline-block;
         content: '';
@@ -70,14 +69,24 @@ a {
     }
 
     @media #{$medium} {
-        &:before, &:after {
-        width: 25%;
+        &:before{
+            margin-right: 25px;
+            width: 30%;
+        }
+        &:after {
+            margin-left: 25px;
+            width: 30%;
         }
     }
 
     @media #{$large} {
-        &:before, &:after {
-        width: 35%;
+        &:before{
+            margin-right: 25px;
+            width: 35%;
+        }
+        &:after {
+            margin-left: 25px;
+            width: 35%;
         }
     }
 }
@@ -118,8 +127,8 @@ a {
     
     @media #{$medium} {
         margin-left: 33.3333%;
-        }
     }
+}
 
 #address {
     height: 120px;
