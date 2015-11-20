@@ -1,0 +1,51 @@
+.main-menu {
+	background: $black90;
+	padding: 0;
+	margin: 0;
+}
+
+.main-menu li {
+	list-style: none;
+	left: 0;
+}
+
+.menu-list {
+	display: inline-block;
+	position: relative;
+}
+
+.menu-list a {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+}
+
+.submenu {
+	display: block;
+	position: relative;
+	background: none;
+	padding: 0;
+	top: 100%;
+	@media #{$medium} {
+		position: absolute;
+		display: none;
+		background: red;
+	}
+}
+
+.submenu li {
+	position: relative;
+	right: 0;
+	width: 100%;
+}
+
+.submenu a:hover {
+	background: white;
+	color: $black80;
+}
+
+.menu-list:hover > .submenu {
+	display: block;
+}
