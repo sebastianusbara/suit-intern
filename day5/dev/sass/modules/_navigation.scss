@@ -2,6 +2,7 @@
 	background: $black90;
 	padding: 0;
 	margin: 0;
+	float: right;
 }
 
 .main-menu li {
@@ -15,11 +16,8 @@
 }
 
 .menu-list a {
-	display: inline-block;
-	padding-left: 10px;
-	padding-right: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px; 
+	display: block;
+	padding : 10px 30px;
 }
 
 .submenu {
@@ -28,17 +26,18 @@
 	background: none;
 	padding: 0;
 	top: 100%;
+	z-index: 1;
+	width: 100%;
 	@media #{$medium} {
 		position: absolute;
 		display: none;
-		background: red;
+		background: $flatblue;
 	}
 }
 
 .submenu li {
 	position: relative;
 	right: 0;
-	width: 100%;
 }
 
 .submenu a:hover {
@@ -48,4 +47,9 @@
 
 .menu-list:hover > .submenu {
 	display: block;
+}
+
+.menu-list:hover > a {
+	background: white;
+	color: $black80;
 }

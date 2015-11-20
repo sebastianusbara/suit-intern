@@ -88,11 +88,15 @@
     color: white;
 }
 
-.box-grey {
-    background: whitesmoke;
+.box {
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid $black30;
+    border: 1px solid black;
+}
+
+.box--grey {
+    background: whitesmoke;
+    border-color: $black30;
 }
 
 .text-block {

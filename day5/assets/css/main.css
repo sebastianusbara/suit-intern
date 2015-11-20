@@ -407,11 +407,15 @@ input[type="search"] {
   color: white;
 }
 
-.box-grey {
-  background: whitesmoke;
+.box {
   padding: 20px;
   margin: 20px 0;
-  border: 1px solid #d5d5d5;
+  border: 1px solid black;
+}
+
+.box--grey {
+  background: whitesmoke;
+  border-color: #d5d5d5;
 }
 
 .text-block {
@@ -1056,18 +1060,6 @@ input[type="number"] {
   margin-top: 0.53333em;
 }
 
-.form-label:after {
-  content: ' :';
-  float: none;
-}
-
-@media screen and (min-width: 48em) {
-  .form-label:after {
-    content: ' :';
-    float: right;
-  }
-}
-
 .signup .form-label {
   display: block;
   margin-top: 0.53333em;
@@ -1243,6 +1235,7 @@ input[type="number"] {
   background: #3c3c3c;
   padding: 0;
   margin: 0;
+  float: right;
 }
 
 .main-menu li {
@@ -1256,11 +1249,8 @@ input[type="number"] {
 }
 
 .menu-list a {
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: block;
+  padding: 10px 30px;
 }
 
 .submenu {
@@ -1269,20 +1259,21 @@ input[type="number"] {
   background: none;
   padding: 0;
   top: 100%;
+  z-index: 1;
+  width: 100%;
 }
 
 @media screen and (min-width: 48em) {
   .submenu {
     position: absolute;
     display: none;
-    background: red;
+    background: #4189d2;
   }
 }
 
 .submenu li {
   position: relative;
   right: 0;
-  width: 100%;
 }
 
 .submenu a:hover {
@@ -1292,6 +1283,11 @@ input[type="number"] {
 
 .menu-list:hover > .submenu {
   display: block;
+}
+
+.menu-list:hover > a {
+  background: white;
+  color: #555555;
 }
 
 html {
@@ -1415,29 +1411,30 @@ a:hover, a:focus {
 }
 
 .jumbotron {
+  position: relative;
   height: 350px;
   background: whitesmoke;
+  background-image: url("../img/work.jpeg");
+  background-size: cover;
 }
 
 .jumbotron h1 {
-  text-align: center;
-  position: relative;
-  top: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
   text-transform: uppercase;
-  padding: 0 20px;
   font-size: 30px;
+  z-index: 0;
 }
 
 @media screen and (min-width: 48em) {
   .jumbotron h1 {
     font-size: 42px;
   }
-}
-
-.jumbotron--bg {
-  background-image: url("../img/work.jpeg");
-  background-size: cover;
 }
 
 .tagline {
