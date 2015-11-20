@@ -110,3 +110,19 @@
     background: $black90;
     color: white;
 }
+
+.mobile-icon {
+    position: relative;
+    top: -25px;
+    text-align: right;
+    @media #{$medium} {
+        display: none;
+    }
+}
+
+.main-menu {
+    display: none;
+    @media #{$medium} {
+        display: block;
+    }
+}

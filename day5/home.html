@@ -15,6 +15,7 @@
     <title>front-end starter kit</title>
     
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <script src="assets/js/vendor/modernizr.min.js"></script>
 </head>
 <body>
@@ -27,18 +28,23 @@
                 <div class="container">
                     <div class="bzg">
                         <div class="bzg_c" data-col="m7">
-                            Hello World
+                            <a href="#">Hello World</a>
                         </div>
                         <div class="bzg_c" data-col="m5">
                             <div class="bzg">
-                                <div class="bzg_c" data-col="m4">
-                                    <a href="#">Link</a>
+                                <div class="mobile-icon">
+                                    <a href="#menu" onclick="loadMenu()"><i class="fa fa-bars"></i></a>
                                 </div>
-                                <div class="bzg_c" data-col="m4">
-                                    <a href="#">Link</a>
-                                </div>
-                                <div class="bzg_c" data-col="m4">
-                                    <a href="#">Link</a>
+                                <div class="main-menu">
+                                    <div class="bzg_c" data-col="m4">
+                                        <a href="#">Link</a>
+                                    </div>
+                                    <div class="bzg_c" data-col="m4">
+                                        <a href="#">Link</a>
+                                    </div>
+                                    <div class="bzg_c" data-col="m4">
+                                        <a href="#">Link</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +129,7 @@
                                             <input id="email" type="email" class="form-input form-input--block">
                                         </div>
                                         <div class="form__row">
-                                            <input type="button" value="subscribe" class="btn btn--block btn--blue btn-round">
+                                            <input type="button" value="subscribe" class="btn btn--block btn--blue btn--round">
                                         </div>
                                     </form>
                                 </div>
@@ -183,5 +189,16 @@
 
         <script>window.myPrefix = '';</script>
         <script src="assets/js/main.min.js"></script>
-    </body>
-    </html>
+        <script>
+        function loadMenu() {
+         var div = document.querySelector('.main-menu');
+         if (div.style.display == 'none' || div.style.display == '') {
+            div.style.display = 'block';
+        }
+        else {
+            div.style.display = 'none';
+        }
+    };
+    </script>
+</body>
+</html>

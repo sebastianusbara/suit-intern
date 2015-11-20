@@ -430,6 +430,28 @@ input[type="search"] {
   color: white;
 }
 
+.mobile-icon {
+  position: relative;
+  top: -25px;
+  text-align: right;
+}
+
+@media screen and (min-width: 48em) {
+  .mobile-icon {
+    display: none;
+  }
+}
+
+.main-menu {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .main-menu {
+    display: block;
+  }
+}
+
 @media print {
   * {
     background: transparent !important;
