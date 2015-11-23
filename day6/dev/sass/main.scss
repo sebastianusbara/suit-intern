@@ -53,6 +53,90 @@ a {
     margin: 0 auto;
 }
 
+.signup{
+    margin : 20px;
+}
+
+.double-line {
+    &:before, &:after {
+        display: inline-block;
+        content: '';
+        width: 100%;
+        height: 10px;
+        border-top: 2px solid $black60;
+        border-bottom: 2px solid $black60;
+        vertical-align: middle;
+    }
+
+    @media #{$medium} {
+        &:before{
+            margin-right: 25px;
+            width: 30%;
+        }
+        &:after {
+            margin-left: 25px;
+            width: 30%;
+        }
+    }
+
+    @media #{$large} {
+        &:before{
+            margin-right: 25px;
+            width: 35%;
+        }
+        &:after {
+            margin-left: 25px;
+            width: 35%;
+        }
+    }
+}
+
+.text-padding {
+    padding: 0 5%;
+}
+
+.btn--blue {
+    background: $flatblue;
+    color: white;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.user-info {
+    margin-bottom: 20px;
+}
+
+.btn--bold {
+    font-weight: 600;
+}
+
+.news {
+    padding: 20px 40px;
+}
+
+.radio-blue {
+    height: 15px;
+    width: 15px;
+    color: blue;
+}
+
+.button-margin {
+    margin-left: 0;
+    margin-top: 5px;
+
+    
+    @media #{$medium} {
+        margin-left: 33.3333%;
+    }
+}
+
+#address {
+    height: 120px;
+}
+
+#male,#female {
+    margin-top: 15px;
+}
 // 3 Header
 // ------------------------------------------------------------------------ //
 

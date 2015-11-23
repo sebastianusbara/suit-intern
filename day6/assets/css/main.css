@@ -395,6 +395,10 @@ input[type="search"] {
   visibility: hidden;
 }
 
+.full-width {
+  margin-left: -25px;
+}
+
 @media print {
   * {
     background: transparent !important;
@@ -681,6 +685,11 @@ table {
 
 .btn--block {
   width: 100%;
+}
+
+.btn--round {
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 /*! Baze Grid v2.0.2 | (c) 2014 @_bobbylie | https://github.com/ImBobby/Baze-Grid */
@@ -977,7 +986,6 @@ input[type="password"] {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
-  -webkit-appearance: none;
 }
 
 input[type="number"] {
@@ -993,6 +1001,36 @@ input[type="number"] {
   margin-top: 0.53333em;
 }
 
+.form-label:after {
+  content: ' :';
+  float: none;
+}
+
+@media screen and (min-width: 48em) {
+  .form-label:after {
+    content: ' :';
+    float: right;
+  }
+}
+
+.signup .form-label {
+  display: block;
+  margin-top: 0.53333em;
+}
+
+.signup .form-label:after {
+  content: '';
+  float: none;
+}
+
+.label--bold {
+  font-weight: bold;
+}
+
+.label--left {
+  display: inline-block;
+}
+
 .form-input {
   padding: 0.53333em;
   border: solid 1px #bbbbbb;
@@ -1000,6 +1038,8 @@ input[type="number"] {
   background: #fff;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .form-input:focus {
@@ -1029,6 +1069,22 @@ input[type="number"] {
 
 .form-input--block {
   width: 100%;
+}
+
+.form--big {
+  padding: 10px 10px;
+}
+
+.row--margin {
+  margin-bottom: 30px;
+}
+
+.textarea-med {
+  height: 120px;
+}
+
+.err-msg {
+  color: red;
 }
 
 /*ul*/
@@ -1133,4 +1189,88 @@ a:hover, a:focus {
   width: 95%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.signup {
+  margin: 20px;
+}
+
+.double-line:before, .double-line:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 10px;
+  border-top: 2px solid #888888;
+  border-bottom: 2px solid #888888;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 48em) {
+  .double-line:before {
+    margin-right: 25px;
+    width: 30%;
+  }
+  .double-line:after {
+    margin-left: 25px;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .double-line:before {
+    margin-right: 25px;
+    width: 35%;
+  }
+  .double-line:after {
+    margin-left: 25px;
+    width: 35%;
+  }
+}
+
+.text-padding {
+  padding: 0 5%;
+}
+
+.btn--blue {
+  background: #4189d2;
+  color: white;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.btn--bold {
+  font-weight: 600;
+}
+
+.news {
+  padding: 20px 40px;
+}
+
+.radio-blue {
+  height: 15px;
+  width: 15px;
+  color: blue;
+}
+
+.button-margin {
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 48em) {
+  .button-margin {
+    margin-left: 33.3333%;
+  }
+}
+
+#address {
+  height: 120px;
+}
+
+#male, #female {
+  margin-top: 15px;
 }

@@ -27,7 +27,7 @@ input[type="password"] {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
-    -webkit-appearance: none;
+    // -webkit-appearance: none;
 }
 
 input[type="number"] {
@@ -41,6 +41,33 @@ input[type="number"] {
 .form-label {
     display: block;
     margin-top: $space/3;
+    &:after {
+        content: ' :';
+        float: none;
+    }
+    @media #{$medium}{
+        &:after {
+            content: ' :';
+            float: right;
+        }
+    }
+}
+
+.signup .form-label {
+    display: block;
+    margin-top: $space/3;
+    &:after {
+        content: '';
+        float: none;
+    }
+}
+
+.label--bold {
+    font-weight: bold;
+}
+
+.label--left {
+    display: inline-block;
 }
 
 .form-input {
@@ -49,6 +76,7 @@ input[type="number"] {
     font-family: inherit;
     background: $input_bg;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    border-radius: 5px;
 
     &:focus {
         border-color: #2669d3;
@@ -82,4 +110,20 @@ input[type="number"] {
 
 .form-input--block {
     width: 100%;
+}
+
+.form--big {
+    padding: 10px 10px;
+}
+
+.row--margin {
+    margin-bottom: 30px;
+}
+
+.textarea-med {
+    height: 120px;
+}
+
+.err-msg {
+    color: red;
 }
