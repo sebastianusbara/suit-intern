@@ -50,116 +50,45 @@
         },
 
         formValidation: function () {
-            var $input      = $( "#fullname,#email,#password,#hobby,#address" );
-            var $fullname   = $( "#fullname" );
-            var $email      = $( "#email" );
-            var $password   = $( "#password" );
-            var $hobby      = $( "#hobby" );
-            var $address    = $( "#address" );
-            var $emailRegex = '^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$'; 
+            var $input      = $( "#newsletter .form-input");
             var $submit     = $( "#submit" );
-            $submit.on( "click", 
-                function (e) {
-                $("form .err-msg").remove();
-                    if ($fullname.val().length > 0) {
-                        $fullname.addClass("form-input--success");
-                        $fullname.removeClass("form-input--error");
-                        $("#fullname-row .err-msg").remove();
-                        e.preventDefault(e);
+            var $err        = $( ".err-msg" );
+            var $formErr    = $( "#newsletter .err-msg");
+            
+
+            $submit.on( "click", function(e) {
+                $("#newsletter .err-msg").remove();
+                $input.removeClass("form-input--success form-input--error");
+                $input.each(function(index, value){
+                    // $form-error.remove();
+                    // console.log($input.eq(index).val().length);
+                    
+                    if ($.trim($input.eq(index).val()).length > 0) {
+                        $input.eq(index).addClass("form-input--success");
+                    } else if ($.trim($input.eq(index).val()).length === 0) {
+                        $input.eq(index).addClass("form-input--error");
+                        $input.eq(index).after('<div class="err-msg">This Field cannot left blank</div>');
+                        $(".form-input--error:first").focus();
+                        event.preventDefault(e);
                     }
+                });
+            });   
+    }
+};
 
-                    else if ($fullname.val().length == 0) {
-                        $fullname.addClass("form-input--error");
-                        $fullname.removeClass("form-input--success");
-                        $fullname.after('<div class="err-msg">This Field Cannot Left Blank</div>');
-                        e.preventDefault(e);
-                    }
+var checkJquery = function () {
+    Modernizr.load([
+    {
+        test    : window.jQuery,
+        nope    : assets._jquery_local,
+        complete: Site.init
+    }
+    ]);
+};
 
-                    else if ($fullname.is(":focus")) {
-                        $("#fullname-row .err-msg").remove();
-                    }
-
-                    if ($email.val().length > 0) {
-                        $email.addClass("form-input--success");
-                        $email.removeClass("form-input--error");
-                        $("#email-row .err-msg").remove();
-                        e.preventDefault(e);
-                    }
-
-                    else if ($email.val().length == 0) {
-                        $email.addClass("form-input--error");
-                        $email.removeClass("form-input--success");
-                        $email.after('<div class="err-msg">This Field Cannot Left Blank</div>');
-                        e.preventDefault(e);
-                    }
-
-                    // else if ($emailRegex == false) {
-                    //     $email.addClass("form-input--error");
-                    //     $email.removeClass("form-input--success");
-                    //     $email.after('<div class="err-msg">Your email input is invalid, please insert valid e-mail address</div>');
-                    //     e.preventDefault(e);
-                    // }
-
-                    if ($password.val().length > 0) {
-                        $password.addClass("form-input--success");
-                        $password.removeClass("form-input--error");
-                        $("#password-row .err-msg").remove();
-                        e.preventDefault(e);
-                    }
-
-                    else if ($password.val().length == 0) {
-                        $password.addClass("form-input--error");
-                        $password.removeClass("form-input--success");
-                        $password.after('<div class="err-msg">This Field Cannot Left Blank</div>');
-                        e.preventDefault(e);
-                    }
-
-                    if ($hobby.val().length > 0) {
-                        $hobby.addClass("form-input--success");
-                        $hobby.removeClass("form-input--error");
-                        $("#hobby-row .err-msg").remove();
-                        e.preventDefault(e);
-                    }
-
-                    else if ($hobby.val().length == 0) {
-                        $hobby.addClass("form-input--error");
-                        $hobby.removeClass("form-input--success");
-                        $hobby.after('<div class="err-msg">This Field Cannot Left Blank</div>');
-                        e.preventDefault(e);
-                    }
-
-                    if ($address.val().length > 0) {
-                        $address.addClass("form-input--success");
-                        $address.removeClass("form-input--error");
-                        $("#address-row .err-msg").remove();
-                        e.preventDefault(e);
-                    }
-
-                    else if ($address.val().length == 0) {
-                        $address.addClass("form-input--error");
-                        $address.removeClass("form-input--success");
-                        $address.after('<div class="err-msg">This Field Cannot Left Blank</div>');
-                        e.preventDefault(e);
-                    }
-
-                }
-            )
-        }
-    };
-
-    var checkJquery = function () {
-        Modernizr.load([
-        {
-            test    : window.jQuery,
-            nope    : assets._jquery_local,
-            complete: Site.init
-        }
-        ]);
-    };
-
-    Modernizr.load({
-        load    : assets._jquery_cdn,
-        complete: checkJquery
-    });
+Modernizr.load({
+    load    : assets._jquery_cdn,
+    complete: checkJquery
+});
 
 })( window, document );
