@@ -22,7 +22,7 @@ Day 5 : 1 one JPG to HTML slicing + responsive
 <br>
 Day 6 :
 <br>
-1. Introduction to javascript, jQuery, modernizr
+1. Introduction to javascript, jQuery, modernizr, IIFE (Immafiately Invoked Function Expression)
 <br>
 2. jQuery Form Validation
 <br>
