@@ -3,6 +3,9 @@
 	padding: 0;
 	margin: 0;
 	float: right;
+	@media #{medium} { 
+		display: inline-block!important;
+	}
 }
 
 .main-menu li {

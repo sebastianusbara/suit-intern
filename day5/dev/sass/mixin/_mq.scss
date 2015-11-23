@@ -6,3 +6,42 @@
     }
 
 }
+
+@mixin bp-large {
+  @media only screen and (min-width: 65em) {
+    @content;    
+  }  
+}
+
+@mixin bp-medium {
+  @media only screen and (min-width: 35em) {
+    @content;    
+  }  
+}
+
+@mixin bp-small {
+  @media only screen and (min-width: 25em) {
+    @content;    
+  }  
+}
+
+@mixin define-breakpoint($name) {
+    &:after {
+      content: $name;
+      display: none;
+    }
+}
+
+body {
+    @include bp-small(){
+        @include define-breakpoint("bp-small");
+    }  
+
+    @include bp-medium(){
+        @include define-breakpoint("bp-medium");
+    }
+
+    @include bp-large(){
+        @include define-breakpoint("bp-large");
+    }
+}

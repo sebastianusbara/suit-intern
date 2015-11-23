@@ -199,14 +199,17 @@
     <script src="assets/js/main.min.js"></script>
     <script>
     function loadMenu() {
-     var div = document.querySelector('.main-menu');
-     if (div.style.display == 'none' || div.style.display == '') {
+       var div = document.querySelector('.main-menu');
+       var mobile = document.querySelector('.moblie-icon');
+       
+        if (div.style.display == 'none' || div.style.display == '') {
         div.style.display = 'block';
-    }
-    else {
+        }
+        else if (div.style.display == 'block' && mobile.style.display == 'block' || div.style.display == '') {
         div.style.display = 'none';
     }
-};
-</script>
+    };
+    </script>
+       
 </body>
 </html>
