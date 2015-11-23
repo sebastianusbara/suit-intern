@@ -17,3 +17,13 @@ Day 4 : Form JPG to HTML Slicing
 2. Baze Grid
 <br>
 3. Styling Radio Button (dipertimbangkan fungsionalitasnya juga jangan asal keren, soalnya kalo terlalu banyak custom kadang bisa ngerusak fungsionality, kaya gabisa diselect pake keyboard)
+<br>
+Day 5 : 1 one JPG to HTML slicing + responsive
+<br>
+Day 6 :
+<br>
+1. Introduction to javascript, jQuery, modernizr
+<br>
+2. jQuery Form Validation
+<br>
+3. jQuery Event Delegation
