@@ -27,3 +27,13 @@ Day 6 :
 2. jQuery Form Validation
 <br>
 3. jQuery Event Delegation
+<br>
+4. jQuery Add Field
+<br>
+Day 7 :
+<br>
+1. jQuery Event
+<br>
+2. Siblings, Parent
+<br>
+3. jQuery Accordion
