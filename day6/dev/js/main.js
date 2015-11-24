@@ -20,6 +20,8 @@
             Site.enableActiveStateMobile();
             Site.WPViewportFix();
             Site.formValidation();
+            Site.formClone();
+            Site.hapus();
 
             window.Site = Site;
         },
@@ -73,22 +75,51 @@
                     }
                 });
             });   
-    }
-};
+        },
 
-var checkJquery = function () {
-    Modernizr.load([
-    {
-        test    : window.jQuery,
-        nope    : assets._jquery_local,
-        complete: Site.init
-    }
-    ]);
-};
+        formClone: function () {
+            var $cloneBtn      = $( '#add');
+            var $identifier    = 1;
 
-Modernizr.load({
-    load    : assets._jquery_cdn,
-    complete: checkJquery
-});
+            $cloneBtn.on('click', function(e) {
+                $( "#hobby" ).clone().appendTo( "#hobby-row" ).
+                after('<button type="button" class="hapus">Hapus</button>');
+                e.preventDefault();
+
+            });   
+
+            $('form').on('click','.hapus', function(e) {
+                $(this).parents('.hobby-clone').remove();
+                e.preventDefault();
+            });   
+
+        },
+
+        hapus: function () {
+            var $cloneBtn      = $( '#add');
+            var $eraseBtn      = $( '.hapus');
+            var $identifier    = 1;
+
+            $eraseBtn.on( 'click', function(e) {
+                $('input').remove();
+                e.preventDefault();
+            });   
+        }
+    };
+
+    var checkJquery = function () {
+        Modernizr.load([
+        {
+            test    : window.jQuery,
+            nope    : assets._jquery_local,
+            complete: Site.init
+        }
+        ]);
+    };
+
+    Modernizr.load({
+        load    : assets._jquery_cdn,
+        complete: checkJquery
+    });
 
 })( window, document );
