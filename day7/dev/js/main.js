@@ -50,12 +50,12 @@
         },
 
         accordionSlide: function () {
-            var $text       = $('.accordion-text');
-            var $button     = $('.accordion-button');
+            var $text       = $('.accordion__content');
+            var $button     = $('.accordion__trigger');
             var $icon       = $('.fa');
-            var $accordion  = $('.accordion');
+            var $header     = $('.accordion__header');
 
-            $accordion.on ( "click", $button , function() {
+            $header.on ( "click", $button , function() {
                 $(this).siblings($text).slideToggle();
                 $(this).find($icon).toggleClass('fa-chevron-down fa-chevron-up');
             });

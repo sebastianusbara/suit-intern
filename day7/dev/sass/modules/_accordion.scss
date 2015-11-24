@@ -3,11 +3,22 @@
 	padding: 15px;
 }
 
-.accordion-text {
+.accordion__content {
 	display: none;
 	padding: 20px;
 }
 
-.accordion-button {
+.accordion__header {
+	padding: 7px 0;
+}
+
+.accordion__title {
+	display: inline-block;
+	margin: 0;
+}
+
+.accordion__trigger {
+	display: inline-block;
 	float: right;
+	margin-top: -3px;
 }
