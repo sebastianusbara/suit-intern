@@ -1,0 +1,25 @@
+.accordion {
+	background: whitesmoke;
+	padding: 15px;
+}
+
+.accordion__content {
+	display: none;
+	padding: 0 0;
+	margin-top: 20px;
+}
+
+.accordion__header {
+	padding: 0;
+}
+
+.accordion__header__title {
+	display: inline-block;
+	margin: 0;
+}
+
+.accordion__header__trigger {
+	display: inline-block;
+	float: right;
+	margin-top: -3px;
+}

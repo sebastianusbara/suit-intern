@@ -1,0 +1,165 @@
+.nav {
+	display: block;
+	width: 100%;
+
+    @media #{$large} {
+    	max-width: 250px;
+    }
+}
+
+.nav a {
+	&:focus {
+		color: $black80;
+	}
+}
+
+
+.sticky-navbar {
+	position: fixed;
+	float: none;
+	background: black;
+	height: 30px;
+
+   	@media #{$large} {
+   		position: fixed;
+   		float: left;
+	    height: 100%;
+	    background: $yellow;
+   	}
+}
+
+.nav__header {
+	background: black;
+	padding: 10px;
+	text-align: left;
+	@media #{$large} {
+	    text-align: center;
+   	}
+}
+
+.nav__header img {
+	max-height: 30px;
+	@media #{$large} {
+	    max-height: 100px;
+   	}
+}
+
+.nav__menu {
+	display: none;
+	padding: 0;
+	background: $yellow;
+	@media #{$large} {
+		display: block;
+	}
+}
+
+.nav__menu li {
+	list-style: none;
+	font-size: 14px;
+	border-bottom: 1px solid $black70;
+}
+
+.nav__menu-list {
+	position: relative;
+}
+
+.nav__menu-list a {
+	display: block;
+	padding: 8px 15px;
+	color: $black80;
+	font-weight: 600;
+}
+
+.nav__menu-list--dropdown span {
+	float: right;
+	margin-top: 5px;
+}
+
+.nav__menu-list a:hover {
+	background: $yellow-light;
+	color: $black80;
+}
+
+.nav__submenu {
+	display: none;
+	position: relative;
+	background: white;
+	padding: 0;
+	margin: 0;
+	@media #{$large}{
+		position: absolute;
+		top: 0;
+		left: 100%;
+		// box-shadow: 4px 4px 4px whitesmoke;
+		width: 100%;
+		margin-left: 15px;
+	}
+}
+
+.nav__submenu-list {
+	&:first-child {
+		@media #{$large} {
+		position: relative;
+			&:before {
+				position: absolute;
+				left: -20px;
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 10px;
+				border-color: transparent white transparent transparent;
+				top: 10px;
+			}
+		}
+	}
+
+	&:last-child {
+		border-bottom: none;
+		@media #{$large} {
+		border-bottom: 1px solid $black70;
+		}
+	}
+}
+
+.nav__submenu-list a {
+	padding: 9.5px 15px;
+}
+
+.nav__menu-list:hover > .nav__submenu {
+	display: none;
+	@media #{$large} {
+		display: block!important;
+	}
+}
+
+.nav__menu-list:hover > a {
+	background: $yellow-light;
+}
+
+.nav__button {
+	display: inline-block;
+	float: right;
+	border: none;
+	background: $yellow;
+	padding: 15px 20px;
+	margin-top: -15px;
+	margin-right: -10px;
+	@media #{$large} {
+		display: none;
+	}
+}
+
+.fa-mob {
+	display: inline-block;
+	@media #{$large} {
+		display: none!important;
+	}
+}
+
+.fa-desk {
+	display: none!important;
+	@media #{$large} {
+		display: inline-block!important;
+	}
+}
