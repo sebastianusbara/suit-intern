@@ -1,9 +1,11 @@
 .social-list {
-	padding: 15px 0 10px 12px;
-	margin: 0;
+	padding: 0 0 20px 15px;
+	margin-top: 10px;
 	display: none;
 	font-weight: 600;
 	color: $black80;
+	border-bottom: 1px solid $black60;
+	font-size: 13px;
 	@media #{$large}{
 		display: block;
 	}
@@ -29,38 +31,30 @@
 
 .social-icon__list {
 	display: inline-block;
-	border-bottom: none;
+	margin-right: 5px;
+	a {
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		&:hover {
+			background: $black;
+		}
+	}
 }
 
-.social-icon__list a {
-	height: 30px;
-	width: 30px;
-}
-
-#fb-icon {
+.fb-icon {
 	background: #3b5998;
-	&:hover {
-		background: white;
-	}
 }
 
-#tw-icon {
+.tw-icon {
 	background: #55acee;
-	&:hover {
-		background: white;
-	}
 }
 
-#yt-icon {
+.yt-icon {
 	background: #e52d27;
-	&:hover {
-		background: white;
-	}
 }
 
-#ig-icon {
+.ig-icon {
 	background: #3f729b;
-	&:hover {
-		background: white;
-	}
 }

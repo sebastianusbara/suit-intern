@@ -47,3 +47,17 @@ $pagination_active_bg       : #888;
         }
     }
 }
+
+.pagination--small {
+    font-size: 10px;
+}
+
+.pagination--yellow li a {
+    margin-top: 10px;
+    &:hover,
+    &:focus,
+    &.active {
+        background: $yellow;
+        color: $black80;
+    }
+}

@@ -1,6 +1,5 @@
 .accordion {
-	background: whitesmoke;
-	padding: 15px;
+	margin-bottom: 40px;
 }
 
 .accordion__content {
@@ -11,15 +10,25 @@
 
 .accordion__header {
 	padding: 0;
+	border-bottom: 1px solid $black50;
 }
 
 .accordion__header__title {
 	display: inline-block;
 	margin: 0;
+	font-weight: bold;
+	color: $black70;
 }
 
 .accordion__header__trigger {
 	display: inline-block;
 	float: right;
-	margin-top: -3px;
+	margin-top: -18px;
+	background: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.accordion__active {
+	background: $yellow;
 }

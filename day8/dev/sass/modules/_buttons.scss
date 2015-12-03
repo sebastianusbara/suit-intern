@@ -50,3 +50,19 @@ $BTN_PADDING: $space/3 $space;
 .btn--block {
     width: 100%;
 }
+
+.btn--active {
+    background: $green;
+    color: white;
+    border: 1px solid $black;
+}
+
+.btn--deactive {
+    background: $pink;
+    color: black;
+    border: 1px solid $black30;
+}
+
+.btn--big {
+    padding: 20px 60px;
+}
